@@ -12,7 +12,7 @@ function MainLayout({ children }) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col transition-colors duration-300 bg-light-background text-light-primary dark:bg-dark-background dark:text-dark-primary">
       <Header onToggleSidebar={toggleSidebar} />
 
       <div className="flex flex-1">

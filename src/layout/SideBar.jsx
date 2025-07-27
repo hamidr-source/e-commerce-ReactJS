@@ -42,7 +42,7 @@ function Sidebar({ isOpen, onClose }) {
       ></motion.div>
 
       <motion.aside
-        className={`fixed inset-y-0 right-0 bg-gray-900 text-white w-64 p-4 z-50 md:hidden`}
+        className={`fixed inset-y-0 right-0 bg-light-background text-light-primary dark:bg-dark-background dark:text-dark-primary w-64 p-4 z-50 md:hidden`}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         exit="closed"

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header({ onToggleSidebar }) {
   return (
-    <header className="bg-blue-400 text-white p-4 shadow-md dark:bg-gray-800 dark:text-gray-200">
+    <header className="bg-light-accent p-4 text-white shadow-md dark:bg-dark-accent">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           Logo
@@ -28,20 +28,35 @@ function Header({ onToggleSidebar }) {
           </svg>
         </button>
 
-        <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-blue-400">
+        <nav className="hidden md:flex space-x-6 transition-all duration-500">
+          <Link
+            to="/"
+            className="hover:text-light-secondary hover:dark:text-dark-secondary transition-all duration-500"
+          >
             Home
           </Link>
-          <Link to="/products" className="hover:text-blue-400">
+          <Link
+            to="/products"
+            className="hover:text-light-secondary hover:dark:text-dark-secondary transition-all duration-500"
+          >
             Products
           </Link>
-          <Link to="/categories" className="hover:text-blue-400">
+          <Link
+            to="/categories"
+            className="hover:text-light-secondary hover:dark:text-dark-secondary transition-all duration-500"
+          >
             Categories
           </Link>
-          <Link to="/about" className="hover:text-blue-400">
+          <Link
+            to="/about"
+            className="hover:text-light-secondary hover:dark:text-dark-secondary transition-all duration-500"
+          >
             About us
           </Link>
-          <Link to="/contact" className="hover:text-blue-400">
+          <Link
+            to="/contact"
+            className="hover:text-light-secondary hover:dark:text-dark-secondary transition-all duration-500"
+          >
             Contact
           </Link>
         </nav>
