@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ThemeController from "../components/ThemeController/ThemeController";
 
 const sidebarVariants = {
   open: {
@@ -97,6 +98,9 @@ function Sidebar({ isOpen, onClose }) {
             </li>
           </ul>
         </nav>
+        <div>
+          <ThemeController />
+        </div>
       </motion.aside>
     </>
   );

@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Header({ onToggleSidebar }) {
   return (
-    <header className="bg-gray-800 text-white p-4 shadow-md">
+    <header className="bg-blue-400 text-white p-4 shadow-md dark:bg-gray-800 dark:text-gray-200">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           Logo

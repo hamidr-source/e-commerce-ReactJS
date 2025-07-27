@@ -39,7 +39,7 @@ const PageLoader = () => {
         {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
-            className="w-6 h-8 bg-blue-600 rounded-full"
+            className="w-6 h-8 bg-blue-500 rounded-full"
             variants={barVariants}
           />
         ))}
