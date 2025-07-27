@@ -98,7 +98,7 @@ function Sidebar({ isOpen, onClose }) {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="absolute right-5 bottom-5">
           <ThemeController />
         </div>
       </motion.aside>

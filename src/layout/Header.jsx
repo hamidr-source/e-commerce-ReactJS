@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ThemeController from "../components/ThemeController/ThemeController";
 
 function Header({ onToggleSidebar }) {
   return (
@@ -60,6 +61,9 @@ function Header({ onToggleSidebar }) {
             Contact
           </Link>
         </nav>
+        <div className="hidden md:block">
+          <ThemeController />
+        </div>
       </div>
     </header>
   );
