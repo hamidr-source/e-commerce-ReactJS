@@ -1,11 +1,9 @@
-// src/components/ThemeController/ThemeController.jsx
-import React from "react";
 import { useThemeStore } from "../../store/useThemeStore";
 import { motion, AnimatePresence } from "framer-motion";
 
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
-function ThemeController() {
+function ThemeController({ iconColorClass }) {
   const theme = useThemeStore((state) => state.theme);
   const toggleTheme = useThemeStore((state) => state.toggleTheme);
 
@@ -18,8 +16,7 @@ function ThemeController() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full text-light-primary dark:text-dark-primary flex items-center justify-center
-      hover:text-light-secondary hover:dark:text-dark-secondary transition-colors       duration-200 w-20 h-20"
+      className={`p-2 rounded-fu flex items-center justify-center duration-200 w-14 h-14 ${iconColorClass}`}
     >
       <AnimatePresence mode="wait" initial={false}>
         {theme === "light" ? (

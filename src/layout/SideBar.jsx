@@ -98,8 +98,10 @@ function Sidebar({ isOpen, onClose }) {
             </li>
           </ul>
         </nav>
-        <div className="absolute right-5 bottom-5">
-          <ThemeController />
+        <div className="absolute right-4 bottom-3">
+          <ThemeController
+            iconColorClass={`text-light-primary dark:text-dark-primary hover:text-light-secondary hover:dark:text-dark-secondary`}
+          />
         </div>
       </motion.aside>
     </>
